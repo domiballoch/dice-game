@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: dice
+
+log:
+  service: ${spring.application.name}
+  appender: CONSOLE
+  level: DEBUG

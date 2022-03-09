@@ -33,7 +33,7 @@ public class TestableUserTest {
         testableUser.setMyGuess(6);
         testableUser.setMyRandom(7);
 
-        //class under test - also accesses switch logic
+        //class under test
         testableUser.testableInput();
 
         //result
@@ -45,11 +45,12 @@ public class TestableUserTest {
 
     @Test
     public void testSnakeEyes() {
+        //set test data (bet, guess, random)
         testableUser.setMyBet(10);
         testableUser.setMyGuess(3);
         testableUser.setMyRandom(2);
 
-        //class under test - also accesses switch logic
+        //class under test
         testableUser.testableInput();
 
         //result
@@ -61,11 +62,12 @@ public class TestableUserTest {
 
     @Test
     public void testStandardWin() {
+        //set test data (bet, guess, random)
         testableUser.setMyBet(10);
         testableUser.setMyGuess(4);
         testableUser.setMyRandom(4);
 
-        //class under test - also accesses switch logic
+        //class under test
         testableUser.testableInput();
 
         //result
@@ -77,11 +79,12 @@ public class TestableUserTest {
 
     @Test
     public void testLose() {
+        //set test data (bet, guess, random)
         testableUser.setMyBet(10);
         testableUser.setMyGuess(7);
         testableUser.setMyRandom(12);
 
-        //class under test - also accesses switch logic
+        //class under test
         testableUser.testableInput();
 
         //result
@@ -107,7 +110,7 @@ public class TestableUserTest {
 
     @Test
     public void testGuessException() {
-        //set test data (bet)
+        //set test data (bet, guess)
         testableUser.setMyBet(10);
         testableUser.setMyGuess(1);
 
@@ -122,7 +125,7 @@ public class TestableUserTest {
 
     @Test
     public void testOutOfFundsException() {
-        //set test data (bet)
+        //set test data (bet, guess, random)
         testableUser.setMyBet(100);
         testableUser.setMyGuess(5);
         testableUser.setMyRandom(12);
